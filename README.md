@@ -12,3 +12,9 @@ or
 or
 
     pg_ctl -h $IP -D ~/postgres-data -l logfile start
+
+Set path for heroku-toolbelt
+
+    cd heroku-client/bin
+
+    PATH=$PATH:$PWD
