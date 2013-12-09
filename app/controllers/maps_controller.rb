@@ -15,9 +15,11 @@ class MapsController < ApplicationController
   
   def get_coordinates
     if coordinates_file = params[:coordinates_file]
-      @coordinates = coordinates_file.read.html_safe # refactor
+      @coordinates = coordinates_file.read.html_safe
     else
-      @coordinates = []
+      coordinates_file = `wget https://raw.github.com/zhaol/ee160_app/master/public/uhm.txt -O -`
+      puts coordinates_file
+      @coordinates = coordinates_file.html_safe
     end
   end
 end
