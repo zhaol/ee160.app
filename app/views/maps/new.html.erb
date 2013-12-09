@@ -1,6 +1,6 @@
 <%= form_tag({action: :create}, multipart: true, id: 'coordinates-file-upload') do %>
   <%= file_field_tag 'coordinates_file' %>
-  <%= submit_tag 'Map It' %>
+  <%= submit_tag 'Map It', class: 'btn' %>
 <% end %>
 <div id='map-canvas'></div>
 

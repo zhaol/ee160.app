@@ -13,5 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require bootstrap.file-input
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+  $('input[type=file]').bootstrapFileInput();
+});
