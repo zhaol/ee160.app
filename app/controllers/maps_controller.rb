@@ -1,16 +1,23 @@
 class MapsController < ApplicationController
+  before_action :get_coordinates
   def index
-    @coordinates = []
     render :new
   end
   
   def new
-    @coordinates = []
   end
   
   def create
-    coordinates_file = params[:coordinates_file]
-    @coordinates = coordinates_file.read.html_safe
     render :new
+  end
+  
+  private
+  
+  def get_coordinates
+    if coordinates_file = params[:coordinates_file]
+      @coordinates = coordinates_file.read.html_safe # refactor
+    else
+      @coordinates = []
+    end
   end
 end
