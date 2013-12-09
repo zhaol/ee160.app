@@ -1,0 +1,4 @@
+[
+  {"lat": 21.299814, "long": -157.817612, "title": "University Of Hawaii at Manoa"},
+  {"lat": 21.297874, "long": -157.815627, "title": "Marine Science Building"}
+]
