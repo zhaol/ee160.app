@@ -1,0 +1,9 @@
+#map-canvas {
+  height: 95%;
+  margin: 0px;
+  padding: 0px
+}
+
+#coordinates-file-upload {
+  height: 5%;
+}
