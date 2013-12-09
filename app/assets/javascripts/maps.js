@@ -4,12 +4,12 @@ function initialize() {
     var lat = $(coordinates).first()[0].lat;
     var long = $(coordinates).first()[0].long;
   } else {
-    var lat = 0;
-    var long = 0;
+    var lat = 21.306944;
+    var long = -157.858333;
   }
   var myLatlng = new google.maps.LatLng(lat, long);
   var mapOptions = {
-    zoom: 4,
+    zoom: 17,
     center: myLatlng
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
