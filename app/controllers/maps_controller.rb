@@ -19,7 +19,7 @@ class MapsController < ApplicationController
     if coordinates_file = params[:coordinates_file]
       @coordinates = coordinates_file.read
     else
-      @coordinates = open('https://raw.github.com/zhaol/ee160_app/master/public/uhm.txt').read
+      @coordinates = open('https://raw.github.com/zhaol/ee160_app/master/public/uhm.json').read
     end
   end
 end

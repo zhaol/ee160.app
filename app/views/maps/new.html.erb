@@ -1,7 +1,18 @@
-<%= form_tag({action: :create}, multipart: true, id: 'coordinates-file-upload') do %>
-  <%= file_field_tag 'coordinates_file' %>
-  <%= submit_tag 'Map It', class: 'btn' %>
-<% end %>
-<div id='map-canvas'></div>
+<div class='map well well-small'>
+  <%= form_tag({action: :create}, multipart: true, id: 'coordinates-file-upload') do %>
+    <%= file_field_tag 'coordinates_file', title: 'Select Your JSON file of Markers' %>
+    <%= submit_tag 'And Then Map It', class: 'btn' %>
+  <% end %>
+</div>
+
+<div class='map-frame'>
+  <div id='map-canvas'>
+  </div>
+</div>
+
+<div class='well well-small'>
+  <p>An example JSON file, <a href='https://github.com/zhaol/ee160_app/blob/master/public/uhm.json'>uhm.json</a>:</p>
+  <script src='https://gist-it.appspot.com/https://github.com/zhaol/ee160_app/blob/master/public/uhm.json'></script>  
+</div>
 
 <script>coordinates = <%= raw @coordinates %></script>
