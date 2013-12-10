@@ -4,4 +4,14 @@
   Use Font Awesome icons (default)
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
-  */
+*/
+
+.jumbotron {
+  margin: 20px;
+  padding: 48px 30px;
+  background-color: #EEEEEE;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.14286;
+  border-radius: 6px;
+}
