@@ -17,3 +17,5 @@
 
 # Ignore Heroku Toolbelt
 /heroku-client
+/c9
+/.c9
