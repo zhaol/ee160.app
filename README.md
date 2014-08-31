@@ -1,20 +1,11 @@
-# An App to Support EE160
+EE160 App - An App to Support EE160
+=================================
 
-## Notes
-Start PostGreSQL on Cloud9:
+Heroku Hosted URL
+-----------------
+http://ee160-app.herokuapp.com
 
-    ../lib/pkg/postgresql-9.1.4/bin/postgres -h $IP -D ~/postgres-data &
-    
-or
-
-    postgres -h $IP -D ~/postgres-data
-    
-or
-
-    pg_ctl -h $IP -D ~/postgres-data -l logfile start
-
-Set path for heroku-toolbelt
-
-    cd heroku-client/bin
-
-    PATH=$PATH:$PWD
+Running Development Site on [Cloud9 IDE](https://c9.io)
+--------------------------------------
+    rails server -p $PORT -b $IP 
+https://ee160_app-c9-zhaol.c9.io/
